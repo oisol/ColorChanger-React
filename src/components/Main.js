@@ -65,14 +65,22 @@ function Main() {
 
     return (
         <main>
-            <h1>Clique no botão para trocar a cor da tela</h1>
-            <button onClick={changeColor}>Trocar</button>
-            <div className="main--colors">
-                <p className="rgb" onClick={copyRbg}>{color}</p>
-                <p className="hex" onClick={copyHex}>{hex}</p>
-            </div>
+            <div className="main--card">
+                <h1 className="main--text">Clique no botão para trocar a cor da tela</h1>
+                <button onClick={changeColor} className="main--button">Trocar</button>
+                <div className="main--colors">
+                    <p className="rgb" onClick={copyRbg}>{color}</p>
+                    <p className="hex" onClick={copyHex}>{hex}</p>
+                </div>
+            </div>    
         </main>
     )
 }
 
+/*
+    TODO
+    Background das cores só deve aparecer após o botão ser clicado
+    Ajustes nas cores/header title/tamanho para d. movel
+    Footer
+*/
 export default Main;
