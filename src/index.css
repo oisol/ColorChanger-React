@@ -1,13 +1,49 @@
-body {
+@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
+
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+  font-family: 'Patrick Hand', cursive;
+  background-color: rgb(227, 240, 164);
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 80px;
+  background-color: rgb(228, 217, 228);
+  box-shadow: 0px 3px 10px 1px #00000035;
+}
+
+.header--title {
+  font-size: 44px;
+  color: rgb(33, 177, 243);
+}
+
+/**** Main ****/
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.main--colors {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 25px;
+  column-gap: 50px;
+}
+
+.rgb {
+  cursor: pointer;
+}
+
+.hex {
+  cursor: pointer;
 }
