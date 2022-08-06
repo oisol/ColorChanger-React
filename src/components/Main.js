@@ -1,3 +1,4 @@
+import { findByLabelText } from "@testing-library/react";
 import { useState, useEffect } from "react";
 import Swal from 'sweetalert2';
 
@@ -5,6 +6,7 @@ function Main() {
     const [color, setColor] = useState("");
     const [hex, setHex] = useState("");
     const [cat, setCat] = useState("");
+    const [isShown, setIsShown] = useState('none');
 
     // api para imagem aleatória de gato
     fetch('https://aws.random.cat/meow')
@@ -18,6 +20,7 @@ function Main() {
     // Atualiza pagina
     useEffect(() => {
         document.body.style.backgroundColor = `${color}`;
+
     })        
     
     // Converter RGB em HEXADECIMAL
@@ -27,6 +30,7 @@ function Main() {
 
     // Gerar cor aleatória
     function changeColor() {
+        
         let n1 = Math.floor((Math.random() * 255) + 1)
         let n2 = Math.floor((Math.random() * 255) + 1)
         let n3 = Math.floor((Math.random() * 255) + 1)
@@ -36,6 +40,11 @@ function Main() {
         setColor(prevColor => (
             `${cor}`
         ))
+
+        // Aparecer card quando for clicado
+        setIsShown(hidden => {
+            'flex'
+        })
     }
 
     // Funções para copiar cor
@@ -68,7 +77,7 @@ function Main() {
             <div className="main--card">
                 <h1 className="main--text">Clique no botão para trocar a cor da tela</h1>
                 <button onClick={changeColor} className="main--button">Trocar</button>
-                <div className="main--colors">
+                <div className="main--colors" style={{display: isShown}}>
                     <p className="rgb" onClick={copyRbg}>{color}</p>
                     <p className="hex" onClick={copyHex}>{hex}</p>
                 </div>
