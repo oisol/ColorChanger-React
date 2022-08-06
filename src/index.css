@@ -142,3 +142,29 @@ main {
   animation: animate 8s linear infinite;
  }
 
+ /***** Footer *******/
+
+ .footer--social {
+  position:absolute;
+  bottom:0;
+  width:100%;
+  height:60px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  background:rgb(120, 189, 224);
+ }
+
+.footer--github {
+  width: 38.04px;
+}
+
+.footer--linkedin {
+  max-width: 38.4px;
+}
+
+.footer--sobre {
+  color: #000000;
+}
+

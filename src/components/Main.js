@@ -86,10 +86,4 @@ function Main() {
     )
 }
 
-/*
-    TODO
-    Background das cores só deve aparecer após o botão ser clicado
-    Ajustes nas cores/header title/tamanho para d. movel
-    Footer
-*/
 export default Main;
