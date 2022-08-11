@@ -1,4 +1,3 @@
-import { findByLabelText } from "@testing-library/react";
 import { useState, useEffect } from "react";
 import Swal from 'sweetalert2';
 
@@ -8,7 +7,7 @@ function Main() {
     const [cat, setCat] = useState("");
     const [isShown, setIsShown] = useState('none');
 
-    // api para imagem aleatória de gato
+    // api para imagem aleatória de gatos
     fetch('https://aws.random.cat/meow')
     .then(res => res.json())
     .then(data => {
@@ -17,7 +16,7 @@ function Main() {
         ))
     })
 
-    // Atualiza pagina
+    // Atualizar pagina
     useEffect(() => {
         document.body.style.backgroundColor = `${color}`;
 
@@ -47,7 +46,7 @@ function Main() {
         })
     }
 
-    // Funções para copiar cor
+    // Funções para copiar cor 
     const copyRbg = () => {
         navigator.clipboard.writeText(color)
         Swal.fire({
@@ -55,7 +54,7 @@ function Main() {
             imageUrl: `${cat}`,
             imageWidth: 400,
             imageHeight: 200,
-            imageAlt: 'Imagem',
+            imageAlt: 'Carregando Imagem',
             confirmButtonText: "Yayyy"
           })
     }
@@ -67,7 +66,7 @@ function Main() {
             imageUrl: `${cat}`,
             imageWidth: 400,
             imageHeight: 200,
-            imageAlt: 'Imagem',
+            imageAlt: 'Carregando Imagem',
             confirmButtonText: 'o(≧▽≦)o'
           })
     }

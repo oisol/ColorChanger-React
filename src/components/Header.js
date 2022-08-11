@@ -1,7 +1,9 @@
 function Header() {
     return (
         <header className="header">
-            <h1 className="header--title">COLOR CHANGER</h1>
+            <h1 className="header--title">
+                Color Changer
+            </h1>
         </header>
     )
 }
