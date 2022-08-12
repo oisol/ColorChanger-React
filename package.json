@@ -2,6 +2,7 @@
   "name": "colorchanger-react",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://oisol.github.io/ColorChanger-React",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.4",
     "@testing-library/react": "^13.3.0",
@@ -9,8 +10,7 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "sweetalert2": "^11.4.24",
-    "web-vitals": "^2.1.4",
-    "homepage": "https://oisol.github.io/ColorChanger-React"
+    "web-vitals": "^2.1.4"
   },
   "scripts": {
     "start": "react-scripts start",
