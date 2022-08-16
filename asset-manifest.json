@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/ColorChanger-React/static/css/main.969fa506.css",
-    "main.js": "/ColorChanger-React/static/js/main.503b328f.js",
+    "main.js": "/ColorChanger-React/static/js/main.a0ea21b8.js",
     "static/media/Linkedin-Logo.png": "/ColorChanger-React/static/media/Linkedin-Logo.032cf8a63be2f0f4d425.png",
     "index.html": "/ColorChanger-React/index.html",
     "main.969fa506.css.map": "/ColorChanger-React/static/css/main.969fa506.css.map",
-    "main.503b328f.js.map": "/ColorChanger-React/static/js/main.503b328f.js.map"
+    "main.a0ea21b8.js.map": "/ColorChanger-React/static/js/main.a0ea21b8.js.map"
   },
   "entrypoints": [
     "static/css/main.969fa506.css",
-    "static/js/main.503b328f.js"
+    "static/js/main.a0ea21b8.js"
   ]
 }
