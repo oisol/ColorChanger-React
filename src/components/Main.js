@@ -18,8 +18,11 @@ function Main() {
 
     // Atualizar pagina
     useEffect(() => {
-        document.body.style.backgroundColor = `${color}`;
-
+        // confere se informações já estão visíveis e muda cor
+        if (isShown !== 'none') {
+            document.body.style.backgroundColor = `${color}`;
+        }
+        
     })        
     
     // Converter RGB em HEXADECIMAL
