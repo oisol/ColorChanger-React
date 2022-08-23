@@ -31,10 +31,10 @@ projeto é desenvolvido em React JS, foi criado com objetivo de praticar alguns 
 
 <p>💻 Para rodar localmente será necessário ter instalado o NodeJS, de preferência a versão 14.20.0.
 <ul> 
-<li> No terminal clone o projeto (git clone https://github.com/oisol/ColorChanger-React.git)
-<li> cd ColorChanger-React
-<li> npm install
-<li> npm start
+<li> No terminal clone o projeto (<code>git clone https://github.com/oisol/ColorChanger-React.git</code>)
+<li> <code>cd ColorChanger-React</code>
+<li> <code>npm install</code>
+<li> <code>npm start</code>
 <li> No navegador vá para "http://localhost:3000/ColorChanger-React"
 <li> Já deverá estar funcionando!
 </ul>
