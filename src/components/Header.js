@@ -8,17 +8,20 @@ function Header() {
         const title = document.querySelector(".header--title");
         const header = document.querySelector(".header");
         const footer = document.querySelector(".footer--social");
+        const card = document.querySelector(".main--card");
 
         if (theme === false) {
             header.style.background = "#713a63"
             title.style.color = "#446a84"
             footer.style.background = "#713a63"
+            card.style.background = "#713a63"
             document.body.style.backgroundColor = "#713a63"
         } else {
             header.style.background = "radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 150%)"
             title.style.color = "#BAFFBD"
             footer.style.background = "#78BDE0"
-            document.body.style.backgroundColor = "#713a63"
+            card.style.background = "#E7BFE7"
+            document.body.style.backgroundColor = "#E3F0A4"
         };
     })
 
