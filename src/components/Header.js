@@ -33,13 +33,16 @@ function Header() {
 
     return (
         <header className="header">
-            <h1 className="header--title">
-                Color Changer
-            </h1>
-            <button className='header--nightmode' onClick={nightMode}>
-                <HiLightBulb />
-            </button>
-
+            <div>
+                <h1 className="header--title">
+                    Color Changer
+                </h1>
+            </div>
+            <div className='header--nightmode'>
+                <button className='button--nightmode' onClick={nightMode}>
+                    <HiLightBulb />
+                </button>
+            </div>
         </header>
     )
 }

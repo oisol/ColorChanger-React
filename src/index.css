@@ -12,11 +12,9 @@ body {
 }
 
 .header {
-  display: flex;
   align-items: center;
-  justify-content: center;
   flex-direction: row;
-  height: 80px;
+  height: 100px;
   background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 150%);
   box-shadow: 0px 3px 10px 1px #00000035;
 }
@@ -31,8 +29,25 @@ body {
   cursor: default;
 }
 
-.header--nightmode {
+.button--nightmode {
   border: 0px;
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
+  border-radius: 12px;
+  background-color: #ffffff;
+  box-shadow: 1px 1px 1px 0px #00000030;
+}
+
+.button--nightmode:hover {
+  background-color: #00000085;
+  color: #fff;
+}
+
+.header--nightmode {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 20px;
 }
 
 /**** Main ****/
