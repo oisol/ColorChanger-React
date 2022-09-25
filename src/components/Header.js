@@ -5,13 +5,19 @@ function Header() {
     const [theme, setTheme] = useState(true)
 
     useEffect(() => {
+        const title = document.querySelector(".header--title");
+        const header = document.querySelector(".header");
+        const footer = document.querySelector(".footer--social");
+
         if (theme === false) {
-            const title = document.querySelector(".header--title");
-            const header = document.querySelector(".header");
-            const footer = document.querySelector(".footer--social");
             header.style.background = "#713a63"
             title.style.color = "#446a84"
             footer.style.background = "#713a63"
+            document.body.style.backgroundColor = "#713a63"
+        } else {
+            header.style.background = "radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 150%)"
+            title.style.color = "#BAFFBD"
+            footer.style.background = "#78BDE0"
             document.body.style.backgroundColor = "#713a63"
         };
     })
