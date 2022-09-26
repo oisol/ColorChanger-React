@@ -99,7 +99,6 @@ main {
   font-size: 22px;
   font-weight: bold;
   color: rgb(87, 86, 86);
-  
 }
 
 .rgb {
@@ -114,7 +113,7 @@ main {
   margin-top: 20px;
   padding: 0;
   transform: translate(-0%,-0%);
-  width: 200px;
+  width: 150px;
   height: 60px;
   text-align: center;
   line-height: 60px;
@@ -126,9 +125,9 @@ main {
   box-sizing: border-box;
   background: linear-gradient(90deg, #03a9f4, #f441a4, #ffeb3b, #03a9f4);
   background-size: 400%;
-  border-radius: 30px;
+  border-radius: 20px;
   border: none;
-  z-index: 1; 
+  z-index: 0; 
 }
 
 .main--button:hover {
@@ -176,20 +175,14 @@ main {
   height:60px;
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: center;
+  gap: 90px;
   align-items: center;
   background:rgb(120, 189, 224);
  }
 
-.footer--github {
+.footer--github, 
+.footer--linkedin,
+.footer--sobre {
   width: 38.04px;
 }
-
-.footer--linkedin {
-  max-width: 38.4px;
-}
-
-.footer--sobre {
-  color: #000000;
-}
-

@@ -7,7 +7,7 @@ function Footer() {
         <footer>
             <div className="footer--social">
                 <a href="https://github.com/oisol/ColorChanger-React/tree/master#-sobre" target="_blank" rel='noreferrer'>
-                <img className="footer--github" src={about} alt="Sobre" onerror="this.onerror=null" />
+                <img className="footer--sobre" src={about} alt="Sobre" onerror="this.onerror=null" />
                 </a>
                 <a href="https://github.com/oisol" target="_blank" rel='noreferrer'>
                     <img className="footer--github" src={githubLogo} alt="Github" onerror="this.onerror=null" />
