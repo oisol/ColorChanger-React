@@ -43,6 +43,6 @@ projeto é desenvolvido em React JS, foi criado com objetivo de praticar alguns 
 <h2>👩‍💻 Autor</h2>
 
 <p>Feito por Matheus Rocha.</p>
-<p>🔎 <a href="https://www.linkedin.com/in/matheus-rocha-201263184/">Linkedin</a></p>
+<p>🔎 <a href="https://www.linkedin.com/in/matheus-rocha-dev">Linkedin</a></p>
 <p>📧 <a href="mailto:matheusrocha.dev01@gmail.com">Email: matheusrocha.dev01@gmail.com</a></p>
 
