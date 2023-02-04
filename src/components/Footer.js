@@ -12,7 +12,7 @@ function Footer() {
                 <a href="https://github.com/oisol" target="_blank" rel='noreferrer'>
                     <img className="footer--github" src={githubLogo} alt="Github" onerror="this.onerror=null" />
                 </a>
-                <a href="https://linkedin.com/in/matheus-rocha-201263184" target="_blank" rel='noreferrer'>
+                <a href="https://www.linkedin.com/in/matheus-rocha-dev" target="_blank" rel='noreferrer'>
                     <img className="footer--linkedin" src={linkedinLogo} alt="Linkedin" onerror="this.onerror=null" />
                 </a>   
             </div>
