@@ -1,8 +1,12 @@
 import { useEffect, useState } from 'react';
 // import {HiLightBulb} from 'react-icons/hi'
 
-function Header() {
-    const [theme, setTheme] = useState(true)
+interface HeaderProps {
+    title: string
+}
+
+function Header({ title } : HeaderProps) {
+    // const [theme, setTheme] = useState(true)
 
     // useEffect(() => {
     //     const title = document.querySelector(".header--title");
@@ -38,7 +42,7 @@ function Header() {
         <header className="header">
             <div>
                 <h1 className="header--title">
-                    Color Changer
+                    { title }
                 </h1>
             </div>
             {/* <div className='header--nightmode'>

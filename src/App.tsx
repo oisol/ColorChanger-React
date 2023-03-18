@@ -7,7 +7,9 @@ import './index.css';
 function App() {
   return (
     <div className="App">
-      < Header /> 
+      < Header 
+        title='Color Changer'
+      /> 
       < MainCard />
       < Footer />
     </div>

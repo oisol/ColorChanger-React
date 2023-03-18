@@ -8,13 +8,13 @@ function MainCard() {
     const [isShown, setIsShown] = useState('none');
 
     // api para imagem aleatória de gatos
-    fetch('https://aws.random.cat/meow')
-        .then(res => res.json())
-        .then(data => {
-            setCat(prevCat => (
-                `${data.file}`
-        ))
-    })
+    // fetch('https://aws.random.cat/meow')
+    //     .then(res => res.json())
+    //     .then(data => {
+    //         setCat(prevCat => (
+    //             `${data.file}`
+    //     ))
+    // })
 
     // Atualizar pagina
     useEffect(() => {
