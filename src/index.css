@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+* {
+  margin: 0;
+}
+
+body {
+  height: 100vh;
+  font-family: 'Patrick Hand', cursive;
+  background-color: rgb(227, 240, 164);
+}
+
+.header {
+  align-items: center;
+  flex-direction: row;
+  height: 100px;
+  background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 150%);
+  box-shadow: 0px 3px 10px 1px #00000035;
+}
+
+.header--title {
+  overflow: auto;
+  text-align: center;
+  font-weight: 400;
+  font-size: 40px;
+  font-family: 'Pacifico', cursive;
+  color: #BAFFBD;
+  cursor: default;
+}
+
+.button--nightmode {
+  border: 0px;
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
+  border-radius: 12px;
+  background-color: #ffffff;
+  box-shadow: 1px 1px 1px 0px #00000030;
+}
+
+.button--nightmode:hover {
+  background-color: #00000085;
+  color: #fff;
+}
+
+.header--nightmode {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 20px;
+}
+
+/**** Main ****/
+main {
+  display: flex;
+  justify-content: center;
+  padding-top: 30px;
+}
+
+.main--card {
+  overflow: auto;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgb(231, 191, 231);
+  width: 360px;
+  height: auto;
+  border-radius: 12px;
+  padding: 10px;
+  margin: 0px 10px 0px 10px;
+  box-shadow: 0px 3px 10px 1px #00000035;
+}
+
+.main--text {
+  font-size: 26px;
+  font-weight: 400;
+  text-align: center;
+  font-family: 'Anton';
+  color: #8af3e3;
+  cursor: default;
+}
+
+.main--colors {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  column-gap: 50px;
+  margin-top: 30px;
+  padding:10px;
+  width: 300px;
+  height: 50px;
+  border-radius: 16px;
+  background-color: rgb(111, 223, 217);
+}
+
+.rgb, .hex {
+  font-size: 22px;
+  font-weight: bold;
+  color: rgb(87, 86, 86);
+}
+
+.rgb {
+  cursor: pointer;
+}
+
+.hex {
+  cursor: pointer;
+}
+
+.main--button {
+  margin-top: 20px;
+  padding: 0;
+  transform: translate(-0%,-0%);
+  width: 150px;
+  height: 60px;
+  text-align: center;
+  line-height: 60px;
+  color: #fff;
+  font-size: 24px;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-family: 'Anton';
+  box-sizing: border-box;
+  background: linear-gradient(90deg, #03a9f4, #f441a4, #ffeb3b, #03a9f4);
+  background-size: 400%;
+  border-radius: 20px;
+  border: none;
+  z-index: 0; 
+}
+
+.main--button:hover {
+  animation: animate 8s linear infinite;
+  cursor: pointer;
+}
+
+@keyframes animate {
+  0% {
+   background-position: 0%;
+  }
+  100% {
+   background-position: 400%;
+  }
+ }
+
+.main--button:before {
+    content: '';
+    position: absolute;
+    top: -5px;
+    bottom: -5px;
+    right: -5px;
+    left: -5px;
+    z-index: -1;
+    background: linear-gradient(90deg, #03a9f4, #f441a4, #ffeb3b, #03a9f4);
+    background-size: 400%;
+    border-radius: 40px;
+    filter: blur(20px);
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.main--button:hover:before {
+  filter: blur(20px);
+  opacity: 1;
+  animation: animate 8s linear infinite;
+ }
+
