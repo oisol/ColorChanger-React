@@ -1,4 +1,4 @@
-import SocialCard from './components/SocialCard';
+import SocialCard from '../SocialCard';
 import './Footer.css';
 
 // Logos

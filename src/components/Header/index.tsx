@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+// import { useEffect, useState } from 'react';
 // import {HiLightBulb} from 'react-icons/hi'
 
 interface HeaderProps {
