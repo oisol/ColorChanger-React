@@ -50,6 +50,11 @@ export const Button = styled.button`
 
     &:hover {
         background-color: #b6ffe2;
+        cursor: pointer;
+    }
+
+    &:active {
+        scale: 90%;
     }
 `
 
