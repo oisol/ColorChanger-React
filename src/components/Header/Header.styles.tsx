@@ -34,4 +34,5 @@ export const Title = styled.h1`
         height: auto;
     
     }    
+
 `
