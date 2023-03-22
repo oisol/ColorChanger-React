@@ -7,6 +7,7 @@ export const MainContainer = styled.main`
 `
 
 export const Card = styled.div`
+    z-index: 1;
     overflow: auto;
     box-sizing: border-box;
     display: flex;
@@ -29,6 +30,7 @@ export const Text = styled.p`
     color: #5dbb87;
     cursor: default;
     letter-spacing: 1.2px;
+    padding: 0 10px 0 10px;
 `
 
 export const Button = styled.button`

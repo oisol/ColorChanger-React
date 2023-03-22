@@ -8,6 +8,7 @@ export const FooterContainer = styled.footer`
 `
 
 export const Container = styled.div`
+    z-index: 0;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -17,8 +18,8 @@ export const Container = styled.div`
     width:100%;
     height: 70px;
     gap: 90px;
-    
-    background:rgb(120, 189, 224);
+
+    background-color: ${ ({ theme }) => theme.footer };
 
     @media only screen and (max-width: 720px) {
         height: 60px;
