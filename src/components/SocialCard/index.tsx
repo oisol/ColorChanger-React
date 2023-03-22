@@ -1,4 +1,4 @@
-import './SocialCard.css';
+import { IconImage } from "./SocialCard"
 
 interface SocialCardProps {
     pageAddress: string
@@ -8,7 +8,7 @@ interface SocialCardProps {
 
 const SocialCard = ({ pageAddress, imageSrc, imageAlt } : SocialCardProps) => {
     return (<a href={pageAddress} target="_blank" rel='noreferrer'>
-        <img src={imageSrc} alt={imageAlt} className="socialCard-image"/>
+        <IconImage src={imageSrc} alt={imageAlt}/>
     </a>)
 };
 
