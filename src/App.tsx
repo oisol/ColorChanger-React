@@ -12,7 +12,7 @@ function App() {
       /> 
       < MainCard 
         text='Clique no botão para trocar a cor da tela'
-        btnText='Trocar'
+        btnText='Click'
       />
       < Footer />
     </div>

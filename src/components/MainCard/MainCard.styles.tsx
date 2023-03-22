@@ -12,7 +12,7 @@ export const Card = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: rgb(231, 191, 231);
+    background-color: rgb(250, 224, 250);
     width: 360px;
     height: auto;
     border-radius: 12px;
@@ -26,12 +26,31 @@ export const Text = styled.p`
     font-weight: 400;
     text-align: center;
     font-family: 'Anton';
-    color: #8af3e3;
+    color: #5dbb87;
     cursor: default;
+    letter-spacing: 1.2px;
 `
 
 export const Button = styled.button`
-    /* Fazer */
+    height: 50px;
+    width: 100px;
+    padding: 10px;
+    margin: 4px;
+    margin-top: 10px;
+
+    border: 0;
+    border-radius: 8px;
+    background-color: #aff6da;
+    color: #252525;
+
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: 1.2px;
+    box-shadow: #25252580 1px 1.5px 2px 1px;
+
+    &:hover {
+        background-color: #b6ffe2;
+    }
 `
 
 export const ColorsContainer = styled.div`

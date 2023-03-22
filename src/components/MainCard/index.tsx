@@ -1,6 +1,5 @@
 import { useState, useEffect } from "react";
 import Swal from 'sweetalert2';
-
 import { 
     MainContainer, 
     Card, 
@@ -16,6 +15,7 @@ interface MainCardProps {
 }
 
 function MainCard({ text, btnText } : MainCardProps ) {
+    
     const [color, setColor] = useState("");
     const [hex, setHex] = useState("");
     const [cat, setCat] = useState("");
