@@ -13,13 +13,13 @@ export const Card = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: rgb(250, 224, 250);
     width: 360px;
     height: auto;
     border-radius: 12px;
     padding: 10px;
     margin: 0px 10px 0px 10px;
     box-shadow: 0px 3px 10px 1px #00000035;
+    background-color: ${ ({ theme }) => theme.mainBg };
 `
 
 export const Text = styled.p`
@@ -27,10 +27,10 @@ export const Text = styled.p`
     font-weight: 400;
     text-align: center;
     font-family: 'Anton';
-    color: #5dbb87;
     cursor: default;
     letter-spacing: 1.2px;
     padding: 0 10px 0 10px;
+    color: ${ ({ theme }) => theme.mainText };
 `
 
 export const Button = styled.button`
@@ -42,8 +42,8 @@ export const Button = styled.button`
 
     border: 0;
     border-radius: 8px;
-    background-color: #aff6da;
-    color: #252525;
+    background-color: ${ ({ theme }) => theme.mainButton };
+    color: ${ ({ theme }) => theme.mainButtonText };
 
     font-size: 18px;
     font-weight: bold;
@@ -51,7 +51,7 @@ export const Button = styled.button`
     box-shadow: #25252580 1px 1.5px 2px 1px;
 
     &:hover {
-        background-color: #b6ffe2;
+        background-color: ${ ({ theme }) => theme.mainButtonTextHover };
         cursor: pointer;
     }
 
@@ -71,12 +71,12 @@ export const ColorsContainer = styled.div`
     width: 300px;
     height: 50px;
     border-radius: 16px;
-    background-color: rgb(111, 223, 217);
+    background-color: ${ ({ theme }) => theme.mainColorsContainer };
 `
 
 export const Color = styled.p`
     font-size: 22px;
     font-weight: bold;
-    color: rgb(87, 86, 86);
     cursor: pointer;
+    color: ${ ({ theme }) => theme.mainColorsText };
 `
