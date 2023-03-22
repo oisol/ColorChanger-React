@@ -1,5 +1,7 @@
 # To Do
 
+- [ ] Passar Components para Arrow Function
+
 ## Themas Aplicados
 1. [ ] Footer
 2. [ ] Social Card
