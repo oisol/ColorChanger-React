@@ -1,6 +1,8 @@
 // import { useEffect, useState } from 'react';
 // import {HiLightBulb} from 'react-icons/hi'
 
+import { HeaderContainer, Title } from "./Header.styles";
+
 interface HeaderProps {
     title: string
 }
@@ -39,18 +41,17 @@ function Header({ title } : HeaderProps) {
     // }
 
     return (
-        <header className="header">
-            <div>
-                <h1 className="header--title">
-                    { title }
-                </h1>
-            </div>
+        <HeaderContainer >
+            <Title >
+                { title }
+            </Title>
+            
             {/* <div className='header--nightmode'>
                 <button className='button--nightmode' onClick={nightMode}>
                     <HiLightBulb />
                 </button>
             </div> */}
-        </header>
+        </HeaderContainer>
     )
 }
 

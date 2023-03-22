@@ -29,5 +29,5 @@ export const Container = styled.div`
         height: auto;
         gap: 10px;
         padding: 5px;
-}    
+    }    
 `;
