@@ -1,5 +1,7 @@
 import SocialCard from '../SocialCard';
-import './Footer.css';
+
+// Styles
+import { FooterContainer, Container } from './Footer.styles';
 
 // Logos
 import about from '../../assets/footer/About-64px.png';
@@ -8,8 +10,8 @@ import linkedinLogo from '../../assets/footer/Linkedin-Logo.png';
 
 function Footer() {
     return ( 
-        <footer className='footer'>
-            <div className="footer-container">
+        <FooterContainer >
+            <Container >
 
                 < SocialCard 
                     pageAddress='https://github.com/oisol/ColorChanger-React/tree/master#-sobre'
@@ -27,8 +29,8 @@ function Footer() {
                     imageAlt='Circulo preto com IN logo do Linkedin.'
                 />
 
-            </div>
-        </footer>
+            </Container>
+        </FooterContainer>
     )
 }
 

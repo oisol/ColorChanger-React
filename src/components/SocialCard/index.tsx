@@ -1,4 +1,4 @@
-import { IconImage } from "./SocialCard"
+import { IconImage } from "./SocialCard.styles"
 
 interface SocialCardProps {
     pageAddress: string

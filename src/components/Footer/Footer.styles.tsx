@@ -1,11 +1,13 @@
-.footer {
+import styled from "styled-components";
+
+export const FooterContainer = styled.footer`
     display: flex;
     width:100%;
     position: absolute;
     bottom: 0;
-}
+`
 
-.footer-container {
+export const Container = styled.div`
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -17,19 +19,15 @@
     gap: 90px;
     
     background:rgb(120, 189, 224);
-}
 
-@media only screen and (max-width: 720px) {
-    .footer-container {
+    @media only screen and (max-width: 720px) {
         height: 60px;
         gap: auto;
     }
-}
 
-@media only screen and (max-width: 480px) {
-    .footer-container {
+    @media only screen and (max-width: 480px) {
         height: auto;
-        padding: 5px;
         gap: 10px;
-    }
-}
+        padding: 5px;
+}    
+`;
