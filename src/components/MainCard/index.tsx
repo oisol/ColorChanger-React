@@ -1,23 +1,37 @@
 import { useState, useEffect } from "react";
 import Swal from 'sweetalert2';
 
-function MainCard() {
+import { 
+    MainContainer, 
+    Card, 
+    Text, 
+    Button, 
+    ColorsContainer, 
+    Color 
+} from "./MainCard.styles";
+
+interface MainCardProps {
+    text: string
+    btnText: string
+}
+
+function MainCard({ text, btnText } : MainCardProps ) {
     const [color, setColor] = useState("");
     const [hex, setHex] = useState("");
     const [cat, setCat] = useState("");
     const [isShown, setIsShown] = useState('none');
 
-    // api para imagem aleatória de gatos
-    // fetch('https://aws.random.cat/meow')
-    //     .then(res => res.json())
-    //     .then(data => {
-    //         setCat(prevCat => (
-    //             `${data.file}`
-    //     ))
-    // })
-
-    // Atualizar pagina
     useEffect(() => {
+
+        //api para imagem aleatória de gatos
+        fetch('https://aws.random.cat/meow')
+            .then(res => res.json())
+            .then(data => {
+                setCat(prevCat => (
+                    `${data.file}`
+                ))
+            })
+
         // confere se informações já estão visíveis e muda cor
         if (isShown !== 'none') {
             document.body.style.backgroundColor = `${color}`;
@@ -73,24 +87,25 @@ function MainCard() {
     }
 
     return (
-        <main>
-            <div className="main--card">
-                <h1 className="main--text">
-                    Clique no botão para trocar a cor da tela
-                </h1>
-                <button onClick={changeColor} className="main--button">
-                    Trocar
-                </button>
-                <div className="main--colors" style={{display: isShown}}>
-                    <p className="rgb" onClick={copyRbg}>
+        <MainContainer >
+            <Card >
+
+                <Text >{text}</Text>
+                <Button onClick={changeColor} >
+                    {btnText}
+                </Button>
+
+                <ColorsContainer style={{display: isShown}}>
+                    <Color onClick={copyRbg}>
                         {color}
-                    </p>
-                    <p className="hex" onClick={copyHex}>
+                    </Color>
+                    <Color onClick={copyHex}>
                         {hex}
-                    </p>
-                </div>
-            </div>    
-        </main>
+                    </Color>
+                </ColorsContainer>
+
+            </Card>    
+        </MainContainer>
     )
 }
 

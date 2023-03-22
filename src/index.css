@@ -9,13 +9,13 @@ body {
 }
 
 /**** Main ****/
-main {
+/* main {
   display: flex;
   justify-content: center;
   padding-top: 30px;
-}
+} */
 
-.main--card {
+/* .main--card {
   overflow: auto;
   box-sizing: border-box;
   display: flex;
@@ -28,18 +28,18 @@ main {
   padding: 10px;
   margin: 0px 10px 0px 10px;
   box-shadow: 0px 3px 10px 1px #00000035;
-}
+} */
 
-.main--text {
+/* .main--text {
   font-size: 26px;
   font-weight: 400;
   text-align: center;
   font-family: 'Anton';
   color: #8af3e3;
   cursor: default;
-}
+} */
 
-.main--colors {
+/* .main--colors {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -51,12 +51,13 @@ main {
   height: 50px;
   border-radius: 16px;
   background-color: rgb(111, 223, 217);
-}
+} */
 
-.rgb, .hex {
+/* .rgb, .hex {
   font-size: 22px;
   font-weight: bold;
   color: rgb(87, 86, 86);
+  cursor: pointer;
 }
 
 .rgb {
@@ -65,9 +66,9 @@ main {
 
 .hex {
   cursor: pointer;
-}
+} */
 
-.main--button {
+/* .main--button {
   margin-top: 20px;
   padding: 0;
   transform: translate(-0%,-0%);
@@ -86,14 +87,14 @@ main {
   border-radius: 20px;
   border: none;
   z-index: 0; 
-}
+} */
 
-.main--button:hover {
+/* .main--button:hover {
   animation: animate 8s linear infinite;
   cursor: pointer;
-}
+} */
 
-@keyframes animate {
+/* @keyframes animate {
   0% {
    background-position: 0%;
   }
@@ -122,5 +123,5 @@ main {
   filter: blur(20px);
   opacity: 1;
   animation: animate 8s linear infinite;
- }
+ } */
 

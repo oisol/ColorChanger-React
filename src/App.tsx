@@ -10,7 +10,10 @@ function App() {
       < Header 
         title='Color Changer'
       /> 
-      < MainCard />
+      < MainCard 
+        text='Clique no botão para trocar a cor da tela'
+        btnText='Trocar'
+      />
       < Footer />
     </div>
   );
