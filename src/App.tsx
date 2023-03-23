@@ -3,10 +3,10 @@ import { useEffect, useState } from 'react';
 import Header from './components/Header/index';
 import MainCard from './components/MainCard/index';
 import Footer from './components/Footer/index';
+import { GlobalStyle } from './components/GlobalStyle';
 
 import { ThemeProvider } from 'styled-components';
 import { lightTheme, darkTheme } from './components/UI/themes';
-import './index.css';
 
 function App() {
     const [theme, setTheme] = useState(true)
@@ -31,17 +31,16 @@ function App() {
 
     return (
         <ThemeProvider theme={theme ? lightTheme : darkTheme}>
-            <div className="App">
-                < Header
-                    title='Color Changer'
-                    funcTheme={toggleTheme}
-                />
-                < MainCard
-                    text='Clique no botão para trocar a cor da tela'
-                    btnText='Click'
-                />
-                < Footer />
-            </div>
+            <GlobalStyle />
+            <Header
+                title='Color Changer'
+                funcTheme={toggleTheme}
+            />
+            <MainCard
+                text='Clique no botão para trocar a cor da tela'
+                btnText='Click'
+            />
+            <Footer />
         </ThemeProvider>
     );
 }
