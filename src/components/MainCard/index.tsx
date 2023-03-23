@@ -14,7 +14,7 @@ interface MainCardProps {
     btnText: string
 }
 
-function MainCard({ text, btnText } : MainCardProps ) {
+const MainCard = ({ text, btnText } : MainCardProps ) => {
     
     const [color, setColor] = useState("");
     const [hex, setHex] = useState("");

@@ -8,7 +8,7 @@ import { GlobalStyle } from './components/GlobalStyle';
 import { ThemeProvider } from 'styled-components';
 import { lightTheme, darkTheme } from './components/UI/themes';
 
-function App() {
+const App = () => {
     const [theme, setTheme] = useState(true)
 
     useEffect(() => {

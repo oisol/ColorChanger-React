@@ -8,7 +8,7 @@ import about from '../../assets/footer/About-64px.png';
 import githubLogo from '../../assets/footer/GitHub-Mark-64px.png';
 import linkedinLogo from '../../assets/footer/Linkedin-Logo.png';
 
-function Footer() {
+const Footer = () => {
     return ( 
         <FooterContainer >
             <Container >

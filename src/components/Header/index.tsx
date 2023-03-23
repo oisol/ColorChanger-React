@@ -8,7 +8,7 @@ interface HeaderProps {
     funcTheme: MouseEventHandler
 }
 
-function Header({ title, funcTheme } : HeaderProps) {
+const Header = ({ title, funcTheme } : HeaderProps) => {
 
     return (
         <HeaderContainer >
