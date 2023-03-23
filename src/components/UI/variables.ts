@@ -6,6 +6,7 @@
     // Header
     export const headerBgLight = 'radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 150%);'
     export const headerTextLight = '#BAFFBD'
+    export const headerButtonLight = '#000000'
     // MainCard
     export const mainBgLight = '#fae0fa'
     export const mainTextLight = '#5dbb87'
@@ -27,6 +28,7 @@
     // Header
     export const headerBgDark = '#353535'
     export const headerTextDark = '#cbcbcb'
+    export const headerButtonDark = '#ffffff'
     // MainCard
     export const mainBgDark = '#666666'
     export const mainTextDark = '#e7e7e7'

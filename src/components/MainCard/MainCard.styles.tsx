@@ -75,7 +75,7 @@ export const ColorsContainer = styled.div`
 `
 
 export const Color = styled.p`
-    font-size: 22px;
+    font-size: 16px;
     font-weight: bold;
     cursor: pointer;
     color: ${ ({ theme }) => theme.mainColorsText };

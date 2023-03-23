@@ -4,6 +4,7 @@ import {
     footerLight,
     headerBgLight,
     headerTextLight,
+    headerButtonLight,
     mainBgLight,
     mainTextLight,
     mainButtonLight,
@@ -12,12 +13,14 @@ import {
     mainColorsContainerLight,
     mainColorsTextLight,
     bodyBglight,
+    
 
     // Dark
     iconDark,
     footerDark,
     headerBgDark,
     headerTextDark,
+    headerButtonDark,
     mainBgDark,
     mainTextDark,
     mainButtonDark,
@@ -45,6 +48,7 @@ import {
     mainColorsContainer: mainColorsContainerLight,
     mainColorsText: mainColorsTextLight,
     bodyBg: bodyBglight,
+    themeButton: headerButtonLight,
  }
 
  export const darkTheme = {
@@ -64,4 +68,5 @@ import {
     mainColorsContainer: mainColorsContainerDark,
     mainColorsText: mainColorsTextDark,
     bodyBg: bodyBgDark,
+    themeButton: headerButtonDark,
  }

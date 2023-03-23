@@ -34,5 +34,12 @@ export const Title = styled.h1`
         height: auto;
     
     }    
+`
 
+export const Button = styled.button`
+    border: none;
+    background: none;
+    cursor: pointer;
+    font-size: 30px;
+    color: ${ ({ theme }) => theme.themeButton };
 `

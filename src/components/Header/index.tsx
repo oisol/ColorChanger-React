@@ -1,7 +1,7 @@
 import { MouseEventHandler } from 'react';
 import {HiLightBulb} from 'react-icons/hi';
 
-import { HeaderContainer, Title } from "./Header.styles";
+import { HeaderContainer, Title, Button } from "./Header.styles";
 
 interface HeaderProps {
     title: string
@@ -14,10 +14,10 @@ function Header({ title, funcTheme } : HeaderProps) {
         <HeaderContainer >
             <Title >
                 { title }
-            </Title>      
-            <button onClick={funcTheme}>
+            </Title>
+            <Button onClick={funcTheme}>
                 <HiLightBulb />
-            </button>
+            </Button>
         </HeaderContainer>
     )
 }
