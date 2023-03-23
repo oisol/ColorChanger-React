@@ -11,6 +11,7 @@ import {
     mainButtonTextHoverLight,
     mainColorsContainerLight,
     mainColorsTextLight,
+    bodyBglight,
 
     // Dark
     iconDark,
@@ -24,6 +25,7 @@ import {
     mainButtonTextHoverDark,
     mainColorsContainerDark,
     mainColorsTextDark,
+    bodyBgDark,
  } from './variables';
 
  export const lightTheme = {
@@ -42,6 +44,7 @@ import {
     mainButtonTextHover: mainButtonTextHoverLight,
     mainColorsContainer: mainColorsContainerLight,
     mainColorsText: mainColorsTextLight,
+    bodyBg: bodyBglight,
  }
 
  export const darkTheme = {
@@ -60,4 +63,5 @@ import {
     mainButtonTextHover: mainButtonTextHoverDark,
     mainColorsContainer: mainColorsContainerDark,
     mainColorsText: mainColorsTextDark,
+    bodyBg: bodyBgDark,
  }

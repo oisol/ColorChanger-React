@@ -14,9 +14,9 @@
     export const mainButtonTextHoverLight = '#b6ffe2'
     export const mainColorsContainerLight = '#6fdfd9'
     export const mainColorsTextLight = '#575656'
-
-
-
+    // Body
+    export const bodyBglight = '#e3f0a4'
+    
 
 
 // Dark
@@ -35,5 +35,7 @@
     export const mainButtonTextHoverDark = '#292929'
     export const mainColorsContainerDark = '#888888'
     export const mainColorsTextDark = '#e7e7e7'
+    // Body
+    export const bodyBgDark = '#4b4d42'
 
-  
+      
