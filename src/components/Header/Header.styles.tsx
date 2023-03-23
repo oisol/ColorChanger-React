@@ -2,6 +2,7 @@ import styled from "styled-components";
 
 export const HeaderContainer = styled.header`
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
 
@@ -22,7 +23,7 @@ export const HeaderContainer = styled.header`
 
 export const Title = styled.h1`
     height: 80px;
-    overflow: hidden;
+    overflow: visible;
     text-align: center;
     font-weight: 400;
     font-size: 40px;
@@ -37,6 +38,9 @@ export const Title = styled.h1`
 `
 
 export const Button = styled.button`
+    height: 30px;
+    margin-left: auto;
+    margin-right: 8px;
     border: none;
     background: none;
     cursor: pointer;
