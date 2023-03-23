@@ -46,4 +46,9 @@ export const Button = styled.button`
     cursor: pointer;
     font-size: 30px;
     color: ${ ({ theme }) => theme.themeButton };
+
+    @media only screen and (max-width: 720px) {
+        font-size: 24px;
+        margin-bottom: 4px;
+    }
 `

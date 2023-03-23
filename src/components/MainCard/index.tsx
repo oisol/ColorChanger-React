@@ -24,6 +24,7 @@ const MainCard = ({ text, btnText } : MainCardProps ) => {
     useEffect(() => {
 
         //api para imagem aleatória de gatos
+        // Pre-load
         fetch('https://aws.random.cat/meow')
             .then(res => res.json())
             .then(data => {
@@ -37,7 +38,17 @@ const MainCard = ({ text, btnText } : MainCardProps ) => {
             document.body.style.backgroundColor = `${color}`;
         }
         
-    })        
+    }, [])        
+
+    const newCatImage = () => {
+        fetch('https://aws.random.cat/meow')
+        .then(res => res.json())
+        .then(data => {
+            setCat(prevCat => (
+                `${data.file}`
+            ))
+        })
+    }
     
     // Converter RGB em HEXADECIMAL
     let Convhex = (r: number, g: number ,b: number) => {
@@ -63,6 +74,7 @@ const MainCard = ({ text, btnText } : MainCardProps ) => {
 
     // Funções para copiar cor 
     const copyRbg = () => {
+        newCatImage()
         navigator.clipboard.writeText(color)
         Swal.fire({
             title: 'Sua Cor em RGB Foi Copiada!!',
@@ -75,6 +87,7 @@ const MainCard = ({ text, btnText } : MainCardProps ) => {
     }
 
     const copyHex = () => {
+        newCatImage()
         navigator.clipboard.writeText(hex)
         Swal.fire({
             title: 'Sua Cor em Hexa Foi Copiada!!',
