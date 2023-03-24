@@ -12,6 +12,6 @@ export const GlobalStyle = createGlobalStyle<{ theme: DefaultTheme }>`
 
 body {
     height: 100vh;
-    background-color: ${({ theme }) => theme.bodyBg};;
+    background-color: ${({ theme }) => theme.bodyBg};
 }
 `;

@@ -22,7 +22,6 @@ const MainCard = ({ text, btnText } : MainCardProps ) => {
     const [isShown, setIsShown] = useState('none');
 
     useEffect(() => {
-
         //api para imagem aleatória de gatos
         // Pre-load
         fetch('https://aws.random.cat/meow')
@@ -32,13 +31,14 @@ const MainCard = ({ text, btnText } : MainCardProps ) => {
                     `${data.file}`
                 ))
             })
+    }, [])        
 
+    useEffect(() => {
         // confere se informações já estão visíveis e muda cor
         if (isShown !== 'none') {
             document.body.style.backgroundColor = `${color}`;
         }
-        
-    }, [])        
+    })
 
     const newCatImage = () => {
         fetch('https://aws.random.cat/meow')
