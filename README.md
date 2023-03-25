@@ -15,9 +15,11 @@
 
 <h2>📌 Sobre</h2>
 
-<p>A função desse app é gerar cores aleatórias e mostrá-las no background, gerar seu código em RGB e Hexadecimal para ser feito a cópia com clique. O 
-projeto é desenvolvido em React JS, foi criado com objetivo de praticar alguns conceitos de programação sendo alguns deles:<br/>
+<p>A função desse aplicativo é gerar cores aleatórias e mostrá-las no background, gerar seu código em RGB e Hexadecimal para ser feito a cópia com clique. O 
+projeto é desenvolvido em React JS usando TypeScript, sendo criado com objetivo de praticar alguns conceitos de programação, sendo alguns deles:<br/>
 <ul>
+<li>TypeScript
+<li>Styled Components
 <li>Manipulação de DOM
 <li>React Hooks
 <li>Fetch API
@@ -35,7 +37,7 @@ projeto é desenvolvido em React JS, foi criado com objetivo de praticar alguns 
 <li> <code>cd ColorChanger-React</code>
 <li> <code>npm install</code>
 <li> <code>npm start</code>
-<li> No navegador vá para "http://localhost:3000/ColorChanger-React"
+<li> No navegador vá para "http://localhost:3000"
 <li> Já deverá estar funcionando!
 </ul>
 
