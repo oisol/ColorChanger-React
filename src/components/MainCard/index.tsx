@@ -56,7 +56,7 @@ const MainCard = ({ text, btnText } : MainCardProps ) => {
     }
 
     // Gerar cor aleatória
-    function changeColor() {
+    const changeColor = () => {
         
         let n1 = Math.floor((Math.random() * 255) + 1)
         let n2 = Math.floor((Math.random() * 255) + 1)
