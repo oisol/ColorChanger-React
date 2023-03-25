@@ -1,11 +1,11 @@
 {
   "files": {
-    "main.js": "/ColorChanger-React/static/js/main.a723892b.js",
+    "main.js": "/ColorChanger-React/static/js/main.0ac20e9b.js",
     "static/media/Linkedin-Logo.png": "/ColorChanger-React/static/media/Linkedin-Logo.032cf8a63be2f0f4d425.png",
     "index.html": "/ColorChanger-React/index.html",
-    "main.a723892b.js.map": "/ColorChanger-React/static/js/main.a723892b.js.map"
+    "main.0ac20e9b.js.map": "/ColorChanger-React/static/js/main.0ac20e9b.js.map"
   },
   "entrypoints": [
-    "static/js/main.a723892b.js"
+    "static/js/main.0ac20e9b.js"
   ]
 }
