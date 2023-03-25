@@ -14,7 +14,7 @@ const Footer = () => {
             <Container >
 
                 < SocialCard 
-                    pageAddress='https://github.com/oisol/ColorChanger-React/tree/master#-sobre'
+                    pageAddress='https://github.com/oisol/ColorChanger-React/tree/main#-sobre'
                     imageSrc={about}
                     imageAlt='Circulo preto com um i dentro.'
                 />
